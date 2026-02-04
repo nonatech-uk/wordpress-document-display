@@ -1,0 +1,236 @@
+.docdisplay-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 1em 0;
+}
+
+.docdisplay-table th,
+.docdisplay-table td {
+    padding: 10px 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.docdisplay-table th {
+    background-color: #f5f5f5;
+    font-weight: 600;
+}
+
+.docdisplay-table tbody tr:nth-child(even) {
+    background-color: #fafafa;
+}
+
+.docdisplay-table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+.docdisplay-table a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.docdisplay-table a:hover {
+    text-decoration: underline;
+}
+
+.docdisplay-download {
+    display: inline-block;
+    padding: 4px 10px;
+    background-color: #0073aa;
+    color: #fff !important;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.docdisplay-download:hover {
+    background-color: #005a87;
+    text-decoration: none !important;
+}
+
+.docdisplay-error {
+    padding: 10px 15px;
+    background-color: #fee;
+    border: 1px solid #c00;
+    color: #c00;
+    border-radius: 3px;
+}
+
+.docdisplay-empty {
+    padding: 10px 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    color: #666;
+    border-radius: 3px;
+}
+
+/* Sub-documents styling */
+.docdisplay-subdocs-row td {
+    background-color: #f9f9f9;
+    padding: 8px 12px 8px 30px;
+    border-top: none;
+}
+
+.docdisplay-subdocs {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.docdisplay-subdoc-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.docdisplay-subdoc-download {
+    font-size: 0.8em;
+    padding: 2px 4px;
+    background-color: #0073aa;
+    color: #fff !important;
+    border-radius: 2px;
+    text-decoration: none !important;
+}
+
+.docdisplay-subdoc-download:hover {
+    background-color: #005a87;
+}
+
+/* Breadcrumb navigation */
+.docdisplay-breadcrumbs {
+    margin-bottom: 1em;
+    padding: 8px 12px;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    font-size: 0.95em;
+}
+
+.docdisplay-breadcrumbs a {
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.docdisplay-breadcrumbs a:hover {
+    text-decoration: underline;
+}
+
+.docdisplay-breadcrumbs span {
+    color: #333;
+    font-weight: 500;
+}
+
+/* Folder list styling (displayed before file table) */
+.docdisplay-folders {
+    margin-bottom: 1em;
+}
+
+.docdisplay-folder-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.docdisplay-folder-list li {
+    margin: 0;
+    padding: 0;
+}
+
+.docdisplay-folder-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-weight: 500;
+    color: #0073aa;
+    text-decoration: none;
+}
+
+.docdisplay-folder-link:hover {
+    text-decoration: underline;
+}
+
+/* Commentary styling */
+.docdisplay-commentary {
+    margin-bottom: 1.5em;
+}
+
+.docdisplay-commentary h2,
+.docdisplay-commentary h3,
+.docdisplay-commentary h4 {
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.docdisplay-commentary p:last-child {
+    margin-bottom: 0;
+}
+
+.docdisplay-commentary ul {
+    margin: 0.5em 0;
+    padding-left: 1.5em;
+}
+
+.docdisplay-commentary a {
+    color: #0073aa;
+}
+
+/* Pagination styling */
+.docdisplay-pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 1em;
+    padding: 10px 0;
+}
+
+.docdisplay-page-link {
+    display: inline-block;
+    padding: 6px 12px;
+    background-color: #0073aa;
+    color: #fff !important;
+    text-decoration: none;
+    border-radius: 3px;
+    font-size: 0.9em;
+}
+
+.docdisplay-page-link:hover {
+    background-color: #005a87;
+    text-decoration: none;
+}
+
+.docdisplay-page-disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.docdisplay-page-disabled:hover {
+    background-color: #ccc;
+}
+
+.docdisplay-page-info {
+    color: #666;
+    font-size: 0.9em;
+}
+
+/* Document link highlight animation */
+.docdisplay-highlight {
+    animation: docdisplay-highlight-fade 3s ease-out;
+}
+
+.docdisplay-highlight td {
+    animation: docdisplay-highlight-fade 3s ease-out;
+}
+
+@keyframes docdisplay-highlight-fade {
+    0% {
+        background-color: #fff3cd;
+    }
+    70% {
+        background-color: #fff3cd;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
